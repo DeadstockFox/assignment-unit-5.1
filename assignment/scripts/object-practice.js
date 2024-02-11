@@ -9,7 +9,11 @@ console.log('***** Object Practice *****')
   - Also give it an array 'favThreeFoods'
 */
 const me = {
-  // TODO - add properties here
+  firstName: 'Michael',
+  lastName: 'Kenyon',
+  hasSiblings: true,
+  shoeCount: 14,
+  favThreeFoods: ['pizza', 'sandwiches', 'boba']
 };
 console.log('A little about me:', me);
 
@@ -20,6 +24,10 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
+//let fullName = `${me.firstName} ${me.lastName}`;
+//I tried it both ways and they each seem to work.
+let fullName = me.firstName + " " + me.lastName;
+console.log('My full name is:', fullName);
 
 
 /* 3. Nested arrays
@@ -27,6 +35,9 @@ console.log('A little about me:', me);
   - Console.log your last favorite food 
 */
 
+console.log('My three favorite foods are:', me.favThreeFoods)
+console.log('First food:', me.favThreeFoods[0])
+console.log('Second food:', me.favThreeFoods[2]);
 
 
 /* 4. Change a property of an existing object.
@@ -36,6 +47,12 @@ console.log('A little about me:', me);
   - Console.log your updated shoe count. 
 */
 
+//Fun fact: I collect shoes!
+//The "deadstock" in my github username is actually a shoe term meaning fresh or unworn.
+
+console.log(`I own ${me.shoeCount} pairs of shoes!`);
+me.shoeCount = 15; // Can also do me.shoeCount +=1 ?
+console.log('My new show count is:', me.shoeCount);
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -43,3 +60,7 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.favoriteColor = 'light blue';
+console.log(me.favoriteColor);
+console.log(me);
