@@ -51,7 +51,7 @@ console.log('Second food:', me.favThreeFoods[2]);
 //The "deadstock" in my github username is actually a shoe term meaning fresh or unworn.
 
 console.log(`I own ${me.shoeCount} pairs of shoes!`);
-me.shoeCount = 15; // Can also do me.shoeCount +=1 ?
+me.shoeCount++;
 console.log('My new show count is:', me.shoeCount);
 
 /* 5. Add a new property to an existing object.
